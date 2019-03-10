@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.admin.inzv2.Patient_HistoryFull_Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".BMI_Activity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/talleditText"
+        android:layout_below="@+id/talltextView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/weighteditText"
+        android:layout_gravity="center"
+        android:layout_below="@+id/weighttextView"
+        android:layout_alignLeft="@+id/talleditText"
+        android:layout_alignStart="@+id/talleditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Twój wzrost (w centymetrach):"
+        android:id="@+id/talltextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Twoja waga (w kilogramach):"
+        android:id="@+id/weighttextView"
+        android:layout_below="@+id/talleditText"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kobieta"
+        android:id="@+id/WomencheckBox"
+        android:layout_alignTop="@+id/MencheckBox"
+        android:layout_alignLeft="@+id/talltextView"
+        android:layout_alignStart="@+id/talltextView"
+        android:checked="true"
+        android:onClick="onCheckboxClicked"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meżczyzna"
+        android:id="@+id/MencheckBox"
+        android:checked="false"
+        android:layout_below="@+id/weighteditText"
+        android:layout_alignRight="@+id/weighteditText"
+        android:layout_alignEnd="@+id/weighteditText"
+        android:onClick="onCheckboxClicked"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Zakresy wartości BMI: mniej niż 16 - wygłodzenie 16 - 16.99 - wychudzenie 17 - 18.49 - niedowaga 18.5 - 24.99 - wartość prawidłowa 25 - 29.99 - nadwaga 30 - 34.99 - I stopień otyłości 35 - 39.99 - II stopień otyłości powyżej 40 - otyłość skrajna"
+        android:id="@+id/descriptionbmitextView"
+        android:textSize="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Twoje Bmi wynosi:"
+        android:id="@+id/BMItextView"
+        android:layout_below="@+id/obliczbutton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oblicz"
+        android:id="@+id/obliczbutton"
+        android:layout_below="@+id/WomencheckBox"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/resulttextView"
+        android:layout_below="@+id/BMItextView"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>

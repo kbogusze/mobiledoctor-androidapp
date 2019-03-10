@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.inzv2">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+   <!--
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".Login_Activity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Patient_Menu_Activity"
+            android:label="@string/title_activity_menu"
+            android:parentActivityName=".Login_Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Login_Activity" />
+        </activity>
+        <activity android:name=".Patient_DoctorList_Activity" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Description_Activity" />
+        <activity android:name=".BMI_Activity" />
+        <activity
+            android:name=".Doctor_Menu_Activity"
+            android:label="@string/title_activity_doctor_menu"
+            android:parentActivityName=".Login_Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Login_Activity" />
+        </activity>
+        <activity android:name=".Patient_History_Activity" />
+        <activity android:name=".Patient_Profile_Activity" />
+        <activity android:name=".Patient_FillPoling_Activity" />
+        <activity
+            android:name=".Doctor_Profile_Activity"
+            android:label="@string/title_activity_doctor_profile"
+            android:parentActivityName=".Doctor_Menu_Activity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Doctor_Menu_Activity" />
+        </activity>
+        <activity android:name=".Doctor_PatientList_Activity" />
+        <activity
+            android:name=".Doctor_PatientDiagnosis_Activity"
+            android:label="@string/title_activity_doctor__patient_diagnosis_"
+            android:parentActivityName=".Doctor_PatientList_Activity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.admin.inzv2.Doctor_PatientList_Activity" />
+        </activity>
+        <activity
+            android:name=".Patient_HistoryFull_Activity"
+            android:label="@string/title_activity_patient__history_full_"
+            android:parentActivityName=".Patient_History_Activity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.admin.inzv2.Patient_History_Activity" />
+        </activity>
+        <activity android:name=".Doctor_PollingDesign_Activity" />
+        <activity android:name=".Register_Choose_Activity" />
+        <activity android:name=".Patient_Register_Activity" />
+        <activity android:name=".Doctor_Register_Activity"></activity>
+    </application>
+
+</manifest>

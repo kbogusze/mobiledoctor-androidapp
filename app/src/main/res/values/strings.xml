@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Mobilny Lekarz</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Hasło</string>
+    <string name="action_sign_in">Pacjent</string>
+    <string name="action_sign_in_short">Pacjent</string>
+    <string name="error_invalid_email">Email jest niepoprawny</string>
+    <string name="error_invalid_password">Hasło jest za krótkie</string>
+    <string name="error_incorrect_password">Hasło jest niepoprawne</string>
+    <string name="error_field_required">Pole jest wymagane</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_menu">Menu Główne</string>
+
+    <string name="navigation_drawer_open">Otwórz menu</string>
+    <string name="navigation_drawer_close">Zamknij menu</string>
+
+    <string name="action_settings">Ustawienia</string>
+    <string name="title_activity_doctor_menu">Menu Główne</string>
+    <string name="diagnosiscard">Diagnoza:</string>
+    <string name="questioncard">Pytanie:</string>
+    <string name="diagnosisreadmore">Zobacz wiecej</string>
+    <string name="title_activity_drawer_patient">Mobilny Lekarz</string>
+    <string name="drawer_open">Wysuń menu</string>
+    <string name="drawer_close">Schowaj menu</string>
+    <string name="title_activity_doctor_profile">Mobilny Lekarz</string>
+    <string name="title_activity_doctor__patient_diagnosis_">Mobilny Lekarz</string>
+    <string name="title_activity_patient__history_full_">Mobilny Lekarz</string>
+    <string name="register">Zarejestruj się</string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<android.support.v7.widget.CardView
+    android:layout_height="wrap_content"
+    card:cardUseCompatPadding="true"
+    card:contentPadding="10dp"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+   >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/telnumberTextView"
+                android:layout_toRightOf="@+id/nameTextView"
+                android:layout_toEndOf="@+id/nameTextView">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/person_photo"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/greendoctor"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameTextView"
+                    android:layout_toRightOf="@+id/person_photo"
+                    android:layout_alignParentTop="true"
+                    android:textSize="22sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ageTextView"
+                    android:layout_toRightOf="@+id/person_photo"
+                    android:layout_below="@+id/nameTextView"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cityTextView"
+                    android:layout_toRightOf="@+id/person_photo"
+                    android:layout_below="@+id/ageTextView"
+                    />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/telnumberTextView"
+                    android:layout_toRightOf="@+id/person_photo"
+                    android:layout_below="@+id/cityTextView"
+                    />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/getquestion"
+                android:text="Zobacz Ankietę"
+                android:visibility="visible"
+                android:layout_below="@+id/person_photo"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

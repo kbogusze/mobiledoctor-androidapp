@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_polingdesign"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Stwórz Ankietę" />
+        <item
+            android:id="@+id/nav_pacientlist"
+            android:icon="@drawable/ic_assignment_ind_black_18dp"
+            android:title="Lista pacjentów" />
+        <item
+            android:id="@+id/nav_doctorcalculator"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Kalkulator BMI" />
+        <item
+            android:id="@+id/nav_doctorprofil"
+            android:icon="@drawable/ic_perm_identity_black_18dp"
+            android:title="Twój Profil" />
+    </group>
+
+    <item android:title="Informacje">
+        <menu>
+            <item
+                android:id="@+id/nav_doctorappinfo"
+                android:icon="@drawable/ic_explore_black_18dp"
+                android:title="O aplikacji" />
+        </menu>
+    </item>
+</menu>

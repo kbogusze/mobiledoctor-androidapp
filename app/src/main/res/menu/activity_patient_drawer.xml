@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_patienthistory"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Twoja Historia" />
+        <item
+            android:id="@+id/nav_doclist"
+            android:icon="@drawable/ic_assignment_ind_black_18dp"
+            android:title="Lista Lekarzy" />
+        <item
+            android:id="@+id/nav_patientcalculator"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Kalkulator BMI" />
+        <item
+            android:id="@+id/nav_patientprofil"
+            android:icon="@drawable/ic_perm_identity_black_18dp"
+            android:title="Twój Profil" />
+    </group>
+
+    <item android:title="Informacje">
+        <menu>
+            <item
+                android:id="@+id/nav_pateintappinfo"
+                android:icon="@drawable/ic_explore_black_18dp"
+                android:title="O aplikacji" />
+        </menu>
+    </item>
+
+</menu>
